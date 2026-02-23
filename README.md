@@ -1,5 +1,7 @@
 # 🕷️ Mama Webster
 
+<img src="https://github.com/p0uyaDev/WebsterAI/blob/main/assets/MamaWebster.png" width="500" height="500" alt="Mama Webster Logo">
+
 Mama Webster is a Discord AI companion inspired by *The Crypt* community.
 
 She is designed as a warm but firm broodmother personality — offering guidance, presence, and structured interaction inside Discord servers.
