@@ -1,8 +1,7 @@
 import "dotenv/config";
 import { Client, Events, GatewayIntentBits } from "discord.js";
-import { execute as pingExecute } from "./commands/utility/ping.js";
+import { execute as chatExecute } from "./commands/ai/chat.js";
 import { askGroq } from "./services/groqService.js";
-
 const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
@@ -18,8 +17,8 @@ client.once(Events.ClientReady, (readyClient) => {
 client.on(Events.InteractionCreate, async (interaction) => {
   if (!interaction.isChatInputCommand()) return;
 
-  if (interaction.commandName === "ping") {
-    await pingExecute(interaction);
+  if (interaction.commandName === "chat") {
+    await chatExecute(interaction);
   }
 });
 

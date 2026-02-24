@@ -1,7 +1,7 @@
 import Groq from "groq-sdk";
 
 const groq = new Groq({
-  apiKey: process.env.GROQ_API,
+  apiKey: process.env.GROQ_API_KEY,
 });
 
 export async function askGroq(prompt) {
@@ -12,7 +12,8 @@ export async function askGroq(prompt) {
         content: prompt,
       },
     ],
-    model: "openai/gpt-oss-20b",
+    model: "groq/compound",
+    max_tokens: 300,
   });
 
   return completion.choices[0]?.message?.content || "No response.";

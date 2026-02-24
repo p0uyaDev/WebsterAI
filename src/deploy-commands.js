@@ -1,8 +1,8 @@
 import "dotenv/config";
 import { REST, Routes } from "discord.js";
-import { data as pingData } from "./commands/utility/ping.js";
+import { data as chatData } from "./commands/ai/chat.js";
 
-const commands = [pingData.toJSON()];
+const commands = [chatData.toJSON()];
 
 const rest = new REST({ version: "10" }).setToken(process.env.DISCORD_API);
 
