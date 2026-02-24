@@ -8,6 +8,8 @@ She is designed as a warm but firm broodmother personality — offering guidance
 
 This project is currently in early development.
 
+[The Crypt Discord Link](https://discord.gg/CyuQHy7bBZ)
+
 ---
 
 ## 🚧 Project Status
