@@ -12,7 +12,11 @@ export async function execute(interaction) {
   await interaction.deferReply();
 
   const userMessage = interaction.options.getString("message");
-  const response = await askGroq(userMessage);
+  let response = await askGroq(userMessage);
+
+  if (response.length > 1900) {
+    response = response.slice(0, 1900) + "\n\n... (truncated)";
+  }
 
   await interaction.editReply(response);
 }
