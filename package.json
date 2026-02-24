@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "nodemon src/App.js"
+    "dev": "nodemon src/index.js"
   },
   "name": "websterai",
   "module": "index.ts",
